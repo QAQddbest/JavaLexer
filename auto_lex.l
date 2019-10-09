@@ -8,7 +8,8 @@
 *********************************************************************************/
 %{
 #define LOCAL
-    char TAB[3][][] = {
+/*
+        char TAB[][][] = {
                     {"abstract","default","goto*","null","switch","boolean","do","if","package","nchronzed","break",
                     "double","implements","private","this","byte","else","import","protected","throw","throws",
                     "case","extends","instanceof","public","transient","catch","false","int","return","true","char",
@@ -17,6 +18,7 @@
                     {"=","+","-","*","/","<",">","<=",">=","==","!=","&&","||","!","."},
                     {"{","}","(",")","[","]",";",":"}
                     };
+*/
 %}
 /* 关键字定义 */
 ABSTRACT                    abstract
@@ -46,10 +48,8 @@ INSTANCEOF                  instanceof
 PUBLIC                      public
 TRANSIENT                   transient
 CATCH                       catch
-FALSE                       false
 INT                         int
 RETURN                      return
-TRUE                        true
 CHAR                        char
 FINAL                       final
 INTERFACE                   interface
@@ -75,6 +75,8 @@ ENUM                        enum
 /* 关键字定义结束 */
 
 /* 运算符定义 */
+QUES                        \?
+COLON                       [:]
 ASSIGNOP                    [=]
 RELOP                       [>]|[<]|[>][=]|[<][=]|[=][=]|[!][=]
 PLUS                        [+]
@@ -86,8 +88,11 @@ OR                          [|][|]
 /* 运算符定义结束 */
 
 /* 分界符定义 */
+ATT                         \@
 DOT                         [.]
-NOT                         [!]/[^=]
+COMMA                       [,]
+NOT                         [!]
+SEM                         [;]
 LP                          \(
 RP                          \)
 LB                          \[
@@ -97,16 +102,20 @@ RC                          \}
 /* 分界符定义结束 */
 
 /* 常数定义 */
-INT                         -?[1-9][0-9]*
-FLOAT                       -?(0|[1-9]+)\.[0-9]*
-CHAR                        \'[a-zA-Z]\'
-STRING                      \"[a-zA-Z0-9]*\"
-BOOLEAN                     (true|false)
+STA_INT                         (-?[1-9][0-9]*|0)
+STA_FLOAT                       -?(0|[1-9]+)\.[0-9]*
+STA_CHAR                        \'[a-zA-Z]\'
+STA_STRING                      \".*\"
+STA_BOOLEAN                     (true|false)
 /* 常数定义结束 */
 
 /* 标识符定义 */
 ID                          [a-zA-Z_$][a-zA-Z_$]*
 /* 标识符定义结束 */
+
+LINECOMMENT                 \/\/.*
+
+COMMENT                     ((\/\*((\*[^\/]+)|[^\*])+\*\/)|(\/\/))
 
 %option noyywrap
 %%
@@ -137,10 +146,8 @@ ID                          [a-zA-Z_$][a-zA-Z_$]*
 {PUBLIC}                    |
 {TRANSIENT}                 |
 {CATCH}                     |
-{FALSE}                     |
 {INT}                       |
 {RETURN}                    |
-{TRUE}                      |
 {CHAR}                      |
 {FINAL}                     |
 {INTERFACE}                 |
@@ -163,8 +170,10 @@ ID                          [a-zA-Z_$][a-zA-Z_$]*
 {WHILE}                     |
 {ASSERT}                    |
 {ENUM}                      {
-                                printf("< 关键字 , %10s >", yytext);
+                                printf("< 关键字 , %10s >\n", yytext);
                             }
+{QUES}                      |
+{COLON}                     |
 {ASSIGNOP}                  |
 {RELOP}                     |
 {PLUS}                      |
@@ -173,34 +182,40 @@ ID                          [a-zA-Z_$][a-zA-Z_$]*
 {DIV}                       |
 {AND}                       |
 {OR}                        {
-                                printf("< 运算符 , %10s >", yytext);
+                                printf("< 运算符 , %10s >\n", yytext);
                             }
+{ATT}                       |
+{COMMA}                     |
 {DOT}                       |
 {NOT}                       |
+{SEM}                       |
 {LP}                        |
 {RP}                        |
 {LB}                        |
 {RB}                        |
 {LC}                        |
 {RC}                        {
-                                printf("< 分界符 , %10s >", yytext);
+                                printf("< 分界符 , %10s >\n", yytext);
                             }
-{INT}                       |
-{FLOAT}                     |
-{CHAR}                      |
-{STRING}                    |
-{BOOLEAN}                   {
-                                printf("< 常数 , %10s >", yytext);
+{STA_INT}                   |
+{STA_FLOAT}                 |
+{STA_CHAR}                  |
+{STA_STRING}                |
+{STA_BOOLEAN}               {
+                                printf("<  常数  , %10s >\n", yytext);
                             }
 {ID}                        {
-                                printf("< 标识符 , %10s >", yytext);
+                                printf("< 标识符 , %10s >\n", yytext);
                             }
+{LINECOMMENT}               |
+{COMMENT}                   |
+[ \n\t]                       //eat the white space
 %%
 int main(int argc, char *argv[]){
     argc--;
     argv++;
     if(argc == 0){
-        printf("致命错误：无输入常数");
+        printf("致命错误：无输入常数\n");
         return 1;
     }else{
         while(argc > 0){
