@@ -1,2 +1,4 @@
 *.docx
 *.o
+./Lexer/bin/*
+./Lexer/build/*
