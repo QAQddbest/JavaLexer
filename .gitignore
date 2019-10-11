@@ -2,3 +2,4 @@
 *.o
 ./Lexer/bin/*
 ./Lexer/build/*
+*.kdev4

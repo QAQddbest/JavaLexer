@@ -10,7 +10,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-int preprocessor(const char *);
+#define LOCAL /* 开启本地调试模式 */
+
 char **get_name_suffix(const char *);
 
 #endif /* end of include guard PREPROCESSOR_H */

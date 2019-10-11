@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/man_lex/preprocessor.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.c
+preprocessor.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.h
+
