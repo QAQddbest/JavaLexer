@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/man_lex.dir/Main.c.o  -o ../../../bin/man_lex 
