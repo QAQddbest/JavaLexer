@@ -3,3 +3,4 @@
 ./Lexer/bin/*
 ./Lexer/build/*
 *.kdev4
+*.xmind

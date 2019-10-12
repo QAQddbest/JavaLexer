@@ -125,6 +125,60 @@ man_lex/fast:
 	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/build
 .PHONY : man_lex/fast
 
+Lexical.o: Lexical.c.o
+
+.PHONY : Lexical.o
+
+# target to build an object file
+Lexical.c.o:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o
+.PHONY : Lexical.c.o
+
+Lexical.i: Lexical.c.i
+
+.PHONY : Lexical.i
+
+# target to preprocess a source file
+Lexical.c.i:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.i
+.PHONY : Lexical.c.i
+
+Lexical.s: Lexical.c.s
+
+.PHONY : Lexical.s
+
+# target to generate assembly for a file
+Lexical.c.s:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.s
+.PHONY : Lexical.c.s
+
+Log.o: Log.c.o
+
+.PHONY : Log.o
+
+# target to build an object file
+Log.c.o:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.o
+.PHONY : Log.c.o
+
+Log.i: Log.c.i
+
+.PHONY : Log.i
+
+# target to preprocess a source file
+Log.c.i:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.i
+.PHONY : Log.c.i
+
+Log.s: Log.c.s
+
+.PHONY : Log.s
+
+# target to generate assembly for a file
+Log.c.s:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.s
+.PHONY : Log.c.s
+
 Main.o: Main.c.o
 
 .PHONY : Main.o
@@ -151,6 +205,33 @@ Main.s: Main.c.s
 Main.c.s:
 	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.s
 .PHONY : Main.c.s
+
+Preprocessor.o: Preprocessor.c.o
+
+.PHONY : Preprocessor.o
+
+# target to build an object file
+Preprocessor.c.o:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o
+.PHONY : Preprocessor.c.o
+
+Preprocessor.i: Preprocessor.c.i
+
+.PHONY : Preprocessor.i
+
+# target to preprocess a source file
+Preprocessor.c.i:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.i
+.PHONY : Preprocessor.c.i
+
+Preprocessor.s: Preprocessor.c.s
+
+.PHONY : Preprocessor.s
+
+# target to generate assembly for a file
+Preprocessor.c.s:
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.s
+.PHONY : Preprocessor.c.s
 
 ToolPac.o: ToolPac.c.o
 
@@ -179,33 +260,6 @@ ToolPac.c.s:
 	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.s
 .PHONY : ToolPac.c.s
 
-preprocessor.o: preprocessor.c.o
-
-.PHONY : preprocessor.o
-
-# target to build an object file
-preprocessor.c.o:
-	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.o
-.PHONY : preprocessor.c.o
-
-preprocessor.i: preprocessor.c.i
-
-.PHONY : preprocessor.i
-
-# target to preprocess a source file
-preprocessor.c.i:
-	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.i
-.PHONY : preprocessor.c.i
-
-preprocessor.s: preprocessor.c.s
-
-.PHONY : preprocessor.s
-
-# target to generate assembly for a file
-preprocessor.c.s:
-	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.s
-.PHONY : preprocessor.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,15 +269,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... man_lex"
 	@echo "... edit_cache"
+	@echo "... Lexical.o"
+	@echo "... Lexical.i"
+	@echo "... Lexical.s"
+	@echo "... Log.o"
+	@echo "... Log.i"
+	@echo "... Log.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Preprocessor.o"
+	@echo "... Preprocessor.i"
+	@echo "... Preprocessor.s"
 	@echo "... ToolPac.o"
 	@echo "... ToolPac.i"
 	@echo "... ToolPac.s"
-	@echo "... preprocessor.o"
-	@echo "... preprocessor.i"
-	@echo "... preprocessor.s"
 .PHONY : help
 
 

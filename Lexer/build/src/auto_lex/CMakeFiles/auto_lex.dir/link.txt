@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/auto_lex.dir/auto_lex.c.o  -o ../../../bin/auto_lex 
+/usr/bin/cc -g  -rdynamic CMakeFiles/auto_lex.dir/auto_lex.c.o  -o ../../../bin/auto_lex 

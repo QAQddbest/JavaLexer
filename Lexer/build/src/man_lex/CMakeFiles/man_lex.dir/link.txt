@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/man_lex.dir/Main.c.o CMakeFiles/man_lex.dir/ToolPac.c.o CMakeFiles/man_lex.dir/preprocessor.c.o  -o ../../../bin/man_lex 
+/usr/bin/cc -g  -rdynamic CMakeFiles/man_lex.dir/Lexical.c.o CMakeFiles/man_lex.dir/Log.c.o CMakeFiles/man_lex.dir/Main.c.o CMakeFiles/man_lex.dir/Preprocessor.c.o CMakeFiles/man_lex.dir/ToolPac.c.o  -o ../../../bin/man_lex 

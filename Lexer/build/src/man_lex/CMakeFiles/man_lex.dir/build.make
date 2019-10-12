@@ -57,9 +57,35 @@ include src/man_lex/CMakeFiles/man_lex.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/man_lex/CMakeFiles/man_lex.dir/flags.make
 
+src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
+src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o: ../src/man_lex/Lexical.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/Lexical.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c
+
+src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/man_lex.dir/Lexical.c.i"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c > CMakeFiles/man_lex.dir/Lexical.c.i
+
+src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/Lexical.c.s"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c -o CMakeFiles/man_lex.dir/Lexical.c.s
+
+src/man_lex/CMakeFiles/man_lex.dir/Log.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
+src/man_lex/CMakeFiles/man_lex.dir/Log.c.o: ../src/man_lex/Log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/man_lex/CMakeFiles/man_lex.dir/Log.c.o"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/Log.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c
+
+src/man_lex/CMakeFiles/man_lex.dir/Log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/man_lex.dir/Log.c.i"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c > CMakeFiles/man_lex.dir/Log.c.i
+
+src/man_lex/CMakeFiles/man_lex.dir/Log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/Log.c.s"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c -o CMakeFiles/man_lex.dir/Log.c.s
+
 src/man_lex/CMakeFiles/man_lex.dir/Main.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
 src/man_lex/CMakeFiles/man_lex.dir/Main.c.o: ../src/man_lex/Main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/man_lex/CMakeFiles/man_lex.dir/Main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/man_lex/CMakeFiles/man_lex.dir/Main.c.o"
 	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/Main.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c
 
 src/man_lex/CMakeFiles/man_lex.dir/Main.c.i: cmake_force
@@ -70,9 +96,22 @@ src/man_lex/CMakeFiles/man_lex.dir/Main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/Main.c.s"
 	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c -o CMakeFiles/man_lex.dir/Main.c.s
 
+src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
+src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o: ../src/man_lex/Preprocessor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/Preprocessor.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c
+
+src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/man_lex.dir/Preprocessor.c.i"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c > CMakeFiles/man_lex.dir/Preprocessor.c.i
+
+src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/Preprocessor.c.s"
+	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c -o CMakeFiles/man_lex.dir/Preprocessor.c.s
+
 src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
 src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o: ../src/man_lex/ToolPac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o"
 	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/ToolPac.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c
 
 src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.i: cmake_force
@@ -83,34 +122,25 @@ src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/ToolPac.c.s"
 	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c -o CMakeFiles/man_lex.dir/ToolPac.c.s
 
-src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.o: src/man_lex/CMakeFiles/man_lex.dir/flags.make
-src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.o: ../src/man_lex/preprocessor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.o"
-	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/man_lex.dir/preprocessor.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.c
-
-src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/man_lex.dir/preprocessor.c.i"
-	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.c > CMakeFiles/man_lex.dir/preprocessor.c.i
-
-src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/man_lex.dir/preprocessor.c.s"
-	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.c -o CMakeFiles/man_lex.dir/preprocessor.c.s
-
 # Object files for target man_lex
 man_lex_OBJECTS = \
+"CMakeFiles/man_lex.dir/Lexical.c.o" \
+"CMakeFiles/man_lex.dir/Log.c.o" \
 "CMakeFiles/man_lex.dir/Main.c.o" \
-"CMakeFiles/man_lex.dir/ToolPac.c.o" \
-"CMakeFiles/man_lex.dir/preprocessor.c.o"
+"CMakeFiles/man_lex.dir/Preprocessor.c.o" \
+"CMakeFiles/man_lex.dir/ToolPac.c.o"
 
 # External object files for target man_lex
 man_lex_EXTERNAL_OBJECTS =
 
+../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o
+../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/Log.c.o
 ../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/Main.c.o
+../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o
 ../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o
-../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/preprocessor.c.o
 ../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/build.make
 ../bin/man_lex: src/man_lex/CMakeFiles/man_lex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ../../../bin/man_lex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ../../../bin/man_lex"
 	cd /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/man_lex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/../../include/man_lex  -g   -o CMakeFiles/man_lex.dir/Lexical.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c"
+},
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/../../include/man_lex  -g   -o CMakeFiles/man_lex.dir/Log.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c"
+},
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/../../include/man_lex  -g   -o CMakeFiles/man_lex.dir/Main.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c"
+},
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/../../include/man_lex  -g   -o CMakeFiles/man_lex.dir/Preprocessor.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c"
+},
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/../../include/man_lex  -g   -o CMakeFiles/man_lex.dir/ToolPac.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c"
+},
+{
+  "directory": "/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex",
+  "command": "/usr/bin/cc  -I/home/oliver/Works/Flex/lab1/Lexer/src/auto_lex/../../include/auto_lex  -g   -o CMakeFiles/auto_lex.dir/auto_lex.c.o   -c /home/oliver/Works/Flex/lab1/Lexer/src/auto_lex/auto_lex.c",
+  "file": "/home/oliver/Works/Flex/lab1/Lexer/src/auto_lex/auto_lex.c"
+}
+]

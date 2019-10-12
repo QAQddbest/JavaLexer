@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../include/man_lex/preprocessor.h
+../include/man_lex/head.h
+
+../include/man_lex/lexical.h
+head.h
+../include/man_lex/head.h
 stdio.h
--
-string.h
--
+../include/man_lex/stdio.h
 stdlib.h
+../include/man_lex/stdlib.h
+string.h
+../include/man_lex/string.h
+ctype.h
 -
 
-/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.c
-preprocessor.h
-/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c
+lexical.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/lexical.h
 

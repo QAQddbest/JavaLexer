@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "../../../bin/man_lex"
   "../../../bin/man_lex.pdb"
+  "CMakeFiles/man_lex.dir/Lexical.c.o"
+  "CMakeFiles/man_lex.dir/Log.c.o"
   "CMakeFiles/man_lex.dir/Main.c.o"
+  "CMakeFiles/man_lex.dir/Preprocessor.c.o"
   "CMakeFiles/man_lex.dir/ToolPac.c.o"
-  "CMakeFiles/man_lex.dir/preprocessor.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

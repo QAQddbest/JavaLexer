@@ -10,11 +10,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "head.h"
 
 #define LOCAL /* 开启本地调试模式 */
 
 int preprocessor(const char *);
-char **get_name_suffix(const char *);
+int lexical_analysis(const char *);
 
 #endif /* end of include guard MAIN_H */
 
