@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/rikkiyang/Git/JavaLexer/Lexer/src/auto_lex/../../include/auto_lex 
+C_INCLUDES = -I/home/oliver/Works/Flex/lab1/Lexer/src/auto_lex/../../include/auto_lex 
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rikkiyang/Git/JavaLexer/Lexer
+CMAKE_SOURCE_DIR = /home/oliver/Works/Flex/lab1/Lexer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rikkiyang/Git/JavaLexer/Lexer/build
+CMAKE_BINARY_DIR = /home/oliver/Works/Flex/lab1/Lexer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles /home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/CMakeFiles/progress.marks
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles 0
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles /home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/CMakeFiles/progress.marks
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/clean
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/preinstall
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/preinstall
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/auto_lex/CMakeFiles/auto_lex.dir/rule:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/CMakeFiles/auto_lex.dir/rule
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/auto_lex/CMakeFiles/auto_lex.dir/rule
 .PHONY : src/auto_lex/CMakeFiles/auto_lex.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ auto_lex: src/auto_lex/CMakeFiles/auto_lex.dir/rule
 
 # fast build rule for target.
 auto_lex/fast:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/build
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/build
 .PHONY : auto_lex/fast
 
 auto_lex.o: auto_lex.c.o
@@ -131,7 +131,7 @@ auto_lex.o: auto_lex.c.o
 
 # target to build an object file
 auto_lex.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.o
 .PHONY : auto_lex.c.o
 
 auto_lex.i: auto_lex.c.i
@@ -140,7 +140,7 @@ auto_lex.i: auto_lex.c.i
 
 # target to preprocess a source file
 auto_lex.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.i
 .PHONY : auto_lex.c.i
 
 auto_lex.s: auto_lex.c.s
@@ -149,7 +149,7 @@ auto_lex.s: auto_lex.c.s
 
 # target to generate assembly for a file
 auto_lex.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/auto_lex/CMakeFiles/auto_lex.dir/build.make src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.s
 .PHONY : auto_lex.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

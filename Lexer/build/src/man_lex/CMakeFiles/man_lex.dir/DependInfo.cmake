@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Lexical.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o"
-  "/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Log.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Log.c.o"
-  "/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Main.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Main.c.o"
-  "/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Preprocessor.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o"
-  "/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/ToolPac.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o"
+  "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o"
+  "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Log.c.o"
+  "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Main.c.o"
+  "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o"
+  "/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

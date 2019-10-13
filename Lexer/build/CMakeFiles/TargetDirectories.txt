@@ -1,8 +1,8 @@
-/home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles/rebuild_cache.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles/edit_cache.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/rebuild_cache.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/edit_cache.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/CMakeFiles/rebuild_cache.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/CMakeFiles/auto_lex.dir
-/home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/CMakeFiles/edit_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles/rebuild_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles/edit_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/rebuild_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/man_lex.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/edit_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/CMakeFiles/rebuild_cache.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/CMakeFiles/auto_lex.dir
+/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/CMakeFiles/edit_cache.dir

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rikkiyang/Git/JavaLexer/Lexer
+CMAKE_SOURCE_DIR = /home/oliver/Works/Flex/lab1/Lexer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rikkiyang/Git/JavaLexer/Lexer/build
+CMAKE_BINARY_DIR = /home/oliver/Works/Flex/lab1/Lexer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles /home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/CMakeFiles/progress.marks
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles 0
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles /home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/CMakeFiles/progress.marks
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/clean
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/preinstall
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/preinstall
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/man_lex/CMakeFiles/man_lex.dir/rule:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/CMakeFiles/man_lex.dir/rule
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f CMakeFiles/Makefile2 src/man_lex/CMakeFiles/man_lex.dir/rule
 .PHONY : src/man_lex/CMakeFiles/man_lex.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ man_lex: src/man_lex/CMakeFiles/man_lex.dir/rule
 
 # fast build rule for target.
 man_lex/fast:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/build
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/build
 .PHONY : man_lex/fast
 
 Lexical.o: Lexical.c.o
@@ -131,7 +131,7 @@ Lexical.o: Lexical.c.o
 
 # target to build an object file
 Lexical.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.o
 .PHONY : Lexical.c.o
 
 Lexical.i: Lexical.c.i
@@ -140,7 +140,7 @@ Lexical.i: Lexical.c.i
 
 # target to preprocess a source file
 Lexical.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.i
 .PHONY : Lexical.c.i
 
 Lexical.s: Lexical.c.s
@@ -149,7 +149,7 @@ Lexical.s: Lexical.c.s
 
 # target to generate assembly for a file
 Lexical.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Lexical.c.s
 .PHONY : Lexical.c.s
 
 Log.o: Log.c.o
@@ -158,7 +158,7 @@ Log.o: Log.c.o
 
 # target to build an object file
 Log.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.o
 .PHONY : Log.c.o
 
 Log.i: Log.c.i
@@ -167,7 +167,7 @@ Log.i: Log.c.i
 
 # target to preprocess a source file
 Log.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.i
 .PHONY : Log.c.i
 
 Log.s: Log.c.s
@@ -176,7 +176,7 @@ Log.s: Log.c.s
 
 # target to generate assembly for a file
 Log.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Log.c.s
 .PHONY : Log.c.s
 
 Main.o: Main.c.o
@@ -185,7 +185,7 @@ Main.o: Main.c.o
 
 # target to build an object file
 Main.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.o
 .PHONY : Main.c.o
 
 Main.i: Main.c.i
@@ -194,7 +194,7 @@ Main.i: Main.c.i
 
 # target to preprocess a source file
 Main.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.i
 .PHONY : Main.c.i
 
 Main.s: Main.c.s
@@ -203,7 +203,7 @@ Main.s: Main.c.s
 
 # target to generate assembly for a file
 Main.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Main.c.s
 .PHONY : Main.c.s
 
 Preprocessor.o: Preprocessor.c.o
@@ -212,7 +212,7 @@ Preprocessor.o: Preprocessor.c.o
 
 # target to build an object file
 Preprocessor.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.o
 .PHONY : Preprocessor.c.o
 
 Preprocessor.i: Preprocessor.c.i
@@ -221,7 +221,7 @@ Preprocessor.i: Preprocessor.c.i
 
 # target to preprocess a source file
 Preprocessor.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.i
 .PHONY : Preprocessor.c.i
 
 Preprocessor.s: Preprocessor.c.s
@@ -230,7 +230,7 @@ Preprocessor.s: Preprocessor.c.s
 
 # target to generate assembly for a file
 Preprocessor.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/Preprocessor.c.s
 .PHONY : Preprocessor.c.s
 
 ToolPac.o: ToolPac.c.o
@@ -239,7 +239,7 @@ ToolPac.o: ToolPac.c.o
 
 # target to build an object file
 ToolPac.c.o:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.o
 .PHONY : ToolPac.c.o
 
 ToolPac.i: ToolPac.c.i
@@ -248,7 +248,7 @@ ToolPac.i: ToolPac.c.i
 
 # target to preprocess a source file
 ToolPac.c.i:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.i
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.i
 .PHONY : ToolPac.c.i
 
 ToolPac.s: ToolPac.c.s
@@ -257,7 +257,7 @@ ToolPac.s: ToolPac.c.s
 
 # target to generate assembly for a file
 ToolPac.c.s:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.s
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(MAKE) -f src/man_lex/CMakeFiles/man_lex.dir/build.make src/man_lex/CMakeFiles/man_lex.dir/ToolPac.c.s
 .PHONY : ToolPac.c.s
 
 # Help Target
@@ -295,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rikkiyang/Git/JavaLexer/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/oliver/Works/Flex/lab1/Lexer/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/rikkiyang/Git/JavaLexer/Lexer/src/auto_lex
+# Install script for directory: /home/oliver/Works/Flex/lab1/Lexer/src/auto_lex
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../include/man_lex/Main.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+head.h
+../include/man_lex/head.h
+
 ../include/man_lex/head.h
 
 ../include/man_lex/lexical.h
@@ -20,7 +30,41 @@ string.h
 ctype.h
 -
 
-/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Lexical.c
+../include/man_lex/preprocessor.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+head.h
+../include/man_lex/head.h
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c
 lexical.h
-/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/lexical.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/lexical.h
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Log.c
+stdio.h
+-
+time.h
+-
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.c
+Main.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Main.h
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Preprocessor.c
+preprocessor.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/preprocessor.h
+
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/ToolPac.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+head.h
+/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/head.h
 

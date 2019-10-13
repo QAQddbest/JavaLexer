@@ -1,4 +1,4 @@
-# Install script for directory: /home/rikkiyang/Git/JavaLexer/Lexer
+# Install script for directory: /home/oliver/Works/Flex/lab1/Lexer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rikkiyang/Git/JavaLexer/Lexer/build/src/man_lex/cmake_install.cmake")
-  include("/home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/cmake_install.cmake")
+  include("/home/oliver/Works/Flex/lab1/Lexer/build/src/man_lex/cmake_install.cmake")
+  include("/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rikkiyang/Git/JavaLexer/Lexer/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oliver/Works/Flex/lab1/Lexer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
