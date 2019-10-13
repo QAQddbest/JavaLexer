@@ -30,7 +30,7 @@ void print_key_val(char *key){
     printf("<%5s><%s> 长度为%lu\n", key, token, strlen(token));
 #endif
 #ifndef LOCAL
-    printf("< %5s , %10s >\n", key, token);
+    printf("\33[37m< %5s , %10s >\n\33[37m", key, token);
 #endif
 }
 void clear_token(){
@@ -153,6 +153,8 @@ int lexical_analysis(const char *FILENAME){
             case '+':
             case '-':
             case '*':
+            case '<':
+            case '>':
             case '/':
             case '!':
                 con_cha_to_token(in);
@@ -181,12 +183,88 @@ int lexical_analysis(const char *FILENAME){
                 print_key_val(" 分界符 ");
                 break;
             /* 以上处理分界符 */
-            /* 以上处理关键字 */
+            /* 以下处理关键字与标识符 */
+            case 'a':
+            case 'A':
+            case 'b':
+            case 'B':
+            case 'c':
+            case 'C':
+            case 'd':
+            case 'D':
+            case 'e':
+            case 'E':
+            case 'f':
+            case 'F':
+            case 'g':
+            case 'G':
+            case 'h':
+            case 'H':
+            case 'i':
+            case 'I':
+            case 'j':
+            case 'J':
+            case 'k':
+            case 'K':
+            case 'l':
+            case 'L':
+            case 'm':
+            case 'M':
+            case 'n':
+            case 'N':
+            case 'o':
+            case 'O':
+            case 'p':
+            case 'P':
+            case 'q':
+            case 'Q':
+            case 'r':
+            case 'R':
+            case 's':
+            case 'S':
+            case 't':
+            case 'T':
+            case 'u':
+            case 'U':
+            case 'v':
+            case 'V':
+            case 'w':
+            case 'W':
+            case 'x':
+            case 'X':
+            case 'y':
+            case 'Y':
+            case 'z':
+            case 'Z':
+                while(character != ' ' && character != '\t' && character != '\n' && is_dilm() == 1){//不能是空白字符与分界符号
+                    con_cha_to_token(in);
+                    getchara(in);
+                }
+                reserve(in);
+                if(is_keyword() == 0){
+                    print_key_val(" 关键字 ");
+                }else{
+                    if(symbol() == 0)
+                        print_key_val(" 标识符 ");
+                    else{
+                        printf("\33[31m词法分析: 无法识别%s\n\33[31m", token);
+                        return 1;
+                    }
+                }
+                break;
+            /* 以上处理关键字与标识符 */
+            case EOF:
+                return 0;
+            case ' ':
+            case '\n':
+            case '\t':
+                break;
             default:
+                printf("\33[31m词法分析: 识别%c出错\n\33[31m", character);
                 break;
         }
     }
-    
+    return 0;
 }
 static int getchara(FILE *in){
     /*
@@ -280,38 +358,33 @@ static int is_numlet(){
 //     printf("<  常数  , %10s >", token);
     return 0;
 }
-static int is_calsym(){
-    /*
-     * @purpose: 判断token是否是运算符
-     * para: NULL
-     * return: 1 - 不是 0 - 是的
-     */
-    int token_len = strlen(token);
-    if(token_len >= 3){
-        return 1;
-    }
-    for(int i=0;i < LEN_TAB1;i++){
-        int tab_len = strlen(TAB1[i]);
-        if(token_len == tab_len && strncmp(TAB1[i], token, token_len*sizeof(char)) == 0){//比较每一个关键字
-//             printf("< 运算符 , %10s >", token);
-            return 0;
-        }
-    }
-    return 1;
-}
+// static int is_calsym(){
+//     /*
+//      * @purpose: 判断token是否是运算符
+//      * para: NULL
+//      * return: 1 - 不是 0 - 是的
+//      */
+//     int token_len = strlen(token);
+//     if(token_len >= 3){
+//         return 1;
+//     }
+//     for(int i=0;i < LEN_TAB1;i++){
+//         int tab_len = strlen(TAB1[i]);
+//         if(token_len == tab_len && strncmp(TAB1[i], token, token_len*sizeof(char)) == 0){//比较每一个关键字
+// //             printf("< 运算符 , %10s >", token);
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
 static int is_dilm(){
     /*
-     * @purpose: 判断token是否是分界符
+     * @purpose: 判断character是否是分界符
      * para: NULL
      * return: 1 - 不是 0 - 是的
      */
-    int token_len = strlen(token);
-    if(token_len != 1){
-        return 1;
-    }
     for(int i=0;i < LEN_TAB2;i++){
-        int tab_len = strlen(TAB2[i]);
-        if(token_len == tab_len && strncmp(TAB2[i], token, token_len*sizeof(char)) == 0){//比较每一个关键字
+        if(strncmp(TAB2[i], &character, sizeof(char)) == 0){
 //             printf("< 分界符 , %10s >", token);
             return 0;
         }

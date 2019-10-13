@@ -15,6 +15,7 @@ int preprocessor(const char *FILENAME){
 #ifdef LOCAL
     logcat("预处理器: 开始执行");
 #endif
+    FILE *in,*out;
     char *FILENAME_TEMP0 = (char *)calloc(strlen(FILENAME), sizeof(char));
     memcpy(FILENAME_TEMP0, FILENAME, strlen(FILENAME) * sizeof(char));
     char *FILENAME_TEMP1 = get_name_suffix(FILENAME_TEMP0);
@@ -25,12 +26,12 @@ int preprocessor(const char *FILENAME){
         FILENAME_TEMP0[strlen(FILENAME_TEMP0)] = '.';
         memcpy(FILENAME_TEMP1, "temp", 5*sizeof(char));
         FILENAME_TEMP1 = NULL;
-        FILE *in = fopen(FILENAME, "r");
+        in = fopen(FILENAME, "r");
         if(in == NULL){
             printf("\33[31m预处理器: 打开文件%s出错\n\33[31m", FILENAME);
             return 1;
         }else{
-            FILE *out = fopen(FILENAME_TEMP0, "w");
+            out = fopen(FILENAME_TEMP0, "w");
             if(out == NULL){
                 printf("\33[31m预处理器: 打开文件%s出错\33[31m", FILENAME_TEMP0);
                 return 1;
@@ -39,6 +40,8 @@ int preprocessor(const char *FILENAME){
         }
     }
     free(FILENAME_TEMP0);
+    fclose(in);
+    fclose(out);
 #ifdef LOCAL
     logcat("预处理器: 执行成功");
 #endif

@@ -7,7 +7,7 @@
 #include "string.h"
 #include <ctype.h>
 
-#define LOCAL
+
 
 static char character;
 static char *token;

@@ -11,8 +11,6 @@
 #include <stdlib.h>
 #include "head.h"
 
-#define LOCAL /* 开启本地调试模式 */
-
 int preprocessor(const char *);
 static void clear_comment(FILE* in, FILE* out);
 static void get_nex_char(FILE *);
