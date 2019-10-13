@@ -8,19 +8,17 @@
 
 ../include/man_lex/head.h
 
-../include/man_lex/lexical.h
+../include/man_lex/preprocessor.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
 head.h
 ../include/man_lex/head.h
-stdio.h
-../include/man_lex/stdio.h
-stdlib.h
-../include/man_lex/stdlib.h
-string.h
-../include/man_lex/string.h
-ctype.h
--
 
-/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/Lexical.c
-lexical.h
-/home/oliver/Works/Flex/lab1/Lexer/src/man_lex/lexical.h
+/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/Preprocessor.c
+preprocessor.h
+/home/rikkiyang/Git/JavaLexer/Lexer/src/man_lex/preprocessor.h
 

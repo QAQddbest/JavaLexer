@@ -58,7 +58,7 @@ int lexical_analysis(const char *FILENAME){
         FILENAME_TEMP0[strlen(FILENAME_TEMP0)] = '.';
         memcpy(FILENAME_TEMP1, "temp", 5*sizeof(char));
         FILENAME_TEMP1 = NULL;
-        in = fopen(FILENAME, "r");
+        in = fopen(FILENAME_TEMP0, "r");
 #ifdef LOCAL
         if(in != NULL)
             logcat("词法分析: 打开temp文件成功");

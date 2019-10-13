@@ -1,7 +1,13 @@
-"fadfasdffa\"fas"
-12*(12131.42141+421412)/34=2324;
-42342.42342+=32523;
+//test
+fadsfas das  dfsa  ;//fdasfsda
+fafa//fafa
+fdaf ads  fda 
 
-
-
- 
+"fad fda fa s s  s s sfs fa faf // fafda fafa "
+/* aaa */
+ads f fdsa  da/**/
+ fdsa  sd sdffds cdas
+ /*
+  *fdasfsdafads sda 
+  *
+  */

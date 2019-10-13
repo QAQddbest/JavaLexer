@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oliver/Works/Flex/lab1/Lexer
+CMAKE_SOURCE_DIR = /home/rikkiyang/Git/JavaLexer/Lexer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oliver/Works/Flex/lab1/Lexer/build
+CMAKE_BINARY_DIR = /home/rikkiyang/Git/JavaLexer/Lexer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/Works/Flex/lab1/Lexer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rikkiyang/Git/JavaLexer/Lexer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

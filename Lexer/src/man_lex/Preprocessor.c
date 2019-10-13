@@ -1,6 +1,5 @@
 #include "preprocessor.h"
 static char word;
-static char word_pre;
 static char word_nex;
 /**
  * @author      : 丁志鹏(OliverDD)
@@ -57,7 +56,9 @@ static void clear_comment(FILE *in, FILE *out){
             while(!feof(in)){
                 get_nex_char(in);
                 fputc(word, out);
-                if((word == '"') && (word == '/')){//字符串结束（避免'\"'情况）
+                if((word_nex == '"') && (word != '\\')){//字符串结束（避免'\"'情况）
+                    fputc(word_nex, out);
+                    get_nex_char(in);//将双引号吃掉
                     break;
                 }
             }
@@ -70,6 +71,7 @@ static void clear_comment(FILE *in, FILE *out){
                     while(!feof(in)){
                         get_nex_char(in);
                         if(word == '\n'){
+                            fputc(word, out);
                             break;
                         }
                     }
@@ -77,7 +79,8 @@ static void clear_comment(FILE *in, FILE *out){
                 case '*':
                     while(!feof(in)){
                         get_nex_char(in);
-                        if(word == '/' && word_pre == '*'){
+                        if(word_nex == '/' && word == '*'){
+                            get_nex_char(in);//吃掉'/'
                             break;
                         }
                     }
@@ -92,7 +95,6 @@ static void clear_comment(FILE *in, FILE *out){
     }
 }
 static void get_nex_char(FILE *in){
-    word_pre = word;
     word = word_nex;
     word_nex = fgetc(in);
 }

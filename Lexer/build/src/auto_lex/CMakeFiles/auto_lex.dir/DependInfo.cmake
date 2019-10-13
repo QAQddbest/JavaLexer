@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/oliver/Works/Flex/lab1/Lexer/src/auto_lex/auto_lex.c" "/home/oliver/Works/Flex/lab1/Lexer/build/src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.o"
+  "/home/rikkiyang/Git/JavaLexer/Lexer/src/auto_lex/auto_lex.c" "/home/rikkiyang/Git/JavaLexer/Lexer/build/src/auto_lex/CMakeFiles/auto_lex.dir/auto_lex.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
